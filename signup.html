@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Car Rental Service</title>
+    <link rel="icon" type="image/x-icon" href="images/logo.jpg">
+    <link rel="stylesheet" href="css/signup.css">
+</head>
+<style>
+    .signup-section{
+        background-image: url("images/bg.jpg");
+    }
+</style>
+<body>
+        <!-- Header Section -->
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <h1>Car Rental Service</h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="carlist.html">Our Cars</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="booking.html">Book Now</a></li>
+                        <li><a href="login.html">login</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    
+
+    <!-- Signup section -->
+    <section class="signup-section">
+        <div class="signup-container">
+            <h1>Create Account</h1>
+            <form class="signup-form" action="WEB-INF/signup.jsp" method="POST">
+    <div class="input-group">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" required>
+    <div class="input-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+    </div>
+    <div class="input-group">
+        <label for="utyp">User type</label>
+        <input type="utype" id="utype" name="utype" required>
+    </div>
+    <button type="submit" class="signup-btn">Sign Up</button>
+    <div class="signup-link">
+        <p>Have an account? <a href="login.html">Login</a></p>
+    </div>
+</form>
+
+        </div>
+    </section>
+
+</body>
+</html>

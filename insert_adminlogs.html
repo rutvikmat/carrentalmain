@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insert Car</title>
+    <link rel="icon" type="image/x-icon" href="images/logo.jpg">
+    <link rel="stylesheet" href="css/style1.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Car Rental Service</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="carlist.html">Our Cars</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="booking.html">Book Now</a></li>
+                    <li><a href="login.html">login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <h1>Insert Car Details</h1>
+    <form action="WEB-INF/insert_adminlogs.jsp" method="post">
+        <label for="log_id">log ID:</label>
+        <input type="text" id="log_id" name="log_id" required><br><br>
+
+        <label for="admin_id">Admin ID:</label>
+        <input type="text" id="admin_id" name="admin_id" required><br><br>
+
+        <label for="action">Action:</label>
+        <select id="action" name="action">
+            <option value="onduty">On Duty</option>
+            <option value="offduty">Off Duty</option>
+            <option value="onleave">On Leave</option>
+        </select><br><br>
+        <button type="submit">Submit</button>
+    </form>
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Car Rental Service. All rights reserved.</p>
+            <div class="social-media">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Car Rental Service - Rent a car for your next trip.">
+    <title>Car Rental Service</title>
+    <link rel="icon" type="image/x-icon" href="images/logo.jpg">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Car Rental Service</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="carlist.html">Our Cars</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="booking.html">Book Now</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Booking Section -->
+    <section id="book" class="booking-section">
+        <div class="container">
+            <h2>Book Your Ride</h2>
+            <form action="confirm.html" method="get">
+                <label for="select-car">Select Car:</label>
+                <select id="select-car" name="select-car" required>
+                    <option value="" disabled selected>Select your car</option>
+                    <option value="Alto">Alto</option>
+                    <option value="Baleno">Baleno</option>
+                    <option value="Ciaz">Ciaz</option>
+                    <option value="Honda City">Honda City</option>
+                    <option value="Toyota Fortuner">Toyota Fortuner</option>
+                    <!-- Add more options as needed -->
+                </select>
+
+                <label for="pickup-location">Pickup Location:</label>
+                <select id="pickup-location" name="pickup-location" required>
+                    <option value="" disabled selected>Select your location</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Kolkata">Kolkata</option>
+                    <option value="Bangalore">Bangalore</option>
+                    <!-- Add more options as needed -->
+                </select>
+
+                <label for="pickup-date">Pickup Date:</label>
+                <input type="date" id="pickup-date" name="pickup-date" required>
+                
+                <label for="return-date">Return Date:</label>
+                <input type="date" id="return-date" name="return-date" required>
+                
+                <label for="car-type">Choose Car Type:</label>
+                <select id="car-type" name="car-type" required>
+                    <option value="SUV">SUV</option>
+                    <option value="Luxury">Luxury</option>
+                    <option value="Compact">Compact</option>
+                </select>
+                
+                <button type="submit" class="btn">Confirm Booking</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Car Rental Service. All rights reserved.</p>
+            <div class="social-media">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

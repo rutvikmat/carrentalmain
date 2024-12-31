@@ -1,0 +1,190 @@
+/* General Styles */
+/* Reset and general styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+    background-color: #000000; /* Bright Blue */
+    padding: 20px 0;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header .logo h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #f1c40f; /* Golden Yellow */
+}
+/* About Section */
+.about-section {
+    background-color: #fff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.about-section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.about-section p {
+    font-size: 18px;
+    margin-bottom: 15px;
+    line-height: 1.8;
+    color: #555;
+}
+
+.about-section ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 18px;
+}
+
+.about-section ul li {
+    margin-bottom: 10px;
+    color: #555;
+    position: relative;
+    padding-left: 20px;
+}
+
+.about-section ul li:before {
+    content: '\2022';
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+/* Feedback Section */
+.feedback-section {
+    background-color: #f7f7f7;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.feedback-section h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #2a2a2a;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.feedback-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.feedback-card {
+    background: linear-gradient(145deg, #ffffff, #f0f0f0);
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feedback-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.quote-icon {
+    font-size: 50px;
+    color: #007bff;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    opacity: 0.1;
+}
+
+.feedback-card p {
+    margin: 10px 0;
+    color: #555;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.feedback-card .rating, .feedback-card .ratings-count, .feedback-card .customer-name {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+.feedback-card .customer-name {
+    color: #007bff;
+    font-style: italic;
+}
+
+/* Footer Section Styling */
+footer {
+    background-color: #000000;
+    padding: 20px 0;
+    color: white;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer .social-media {
+    margin-top: 10px;
+}
+
+footer .social-media a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+footer .social-media a:hover {
+    color: #f39c12; /* Golden Yellow */
+}

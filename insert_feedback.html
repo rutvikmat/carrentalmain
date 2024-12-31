@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+</head>
+<body>
+    <h1>Insert Feedback</h1>
+    <form action="WEB-INF/insert_feedback.jsp" method="post">
+        <label for="feedback_id">Feedback ID:</label>
+        <input type="text" id="feedback_id" name="feedback_id" required><br><br>
+
+        <label for="user_id">user_id:</label>
+        <input type="text" id="user_id" name="user_id" required><br><br>
+
+        <label for="car_id">car_id:</label>
+        <input type="text" id="car_id" name="car_id" required><br><br>
+
+        <label for="rental_id">rental_id:</label>
+        <input type="text" id="rental_id" name="rental_id" required><br><br>
+
+        <label for="rating">rating:</label>
+        <input type="text" id="rating" name="rating" required><br><br>
+
+        <label for="comments">comments:</label>
+        <input type="text" id="comments" name="comments" required><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

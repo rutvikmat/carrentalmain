@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirm Booking</title>
+    <link rel="icon" type="image/x-icon" href="images/logo.jpg">
+    <link rel="stylesheet" href="css/confirm_booking.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Car Rental Service</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="carlist.html">Our Cars</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Booking Confirmation Section -->
+    <div class="container">
+        <h1>Confirm Your Booking</h1>
+        <form action="submit_booking.html" method="POST">
+            <div class="form-group">
+                <label for="carName">Car Name:</label>
+                <input type="text" id="carName" name="carName" readonly value="">
+            </div>
+            <div class="form-group">
+                <label for="carType">Car Type:</label>
+                <input type="text" id="carType" name="carType" readonly value="">
+            </div>
+            <div class="form-group">
+                <label for="pickupDate">Pickup Date:</label>
+                <input type="date" id="pickupDate" name="pickupDate" required>
+            </div>
+            <div class="form-group">
+                <label for="returnDate">Return Date:</label>
+                <input type="date" id="returnDate" name="returnDate" required>
+            </div>
+            <div class="form-group">
+                <label for="customerName">Your Name:</label>
+                <input type="text" id="customerName" name="customerName" required>
+            </div>
+            <div class="form-group">
+                <label for="contactNumber">Contact Number:</label>
+                <input type="tel" id="contactNumber" name="contactNumber" required>
+            </div>
+            <button type="submit">Confirm Booking</button>
+        </form>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Car Rental Service. All rights reserved.</p>
+            <div class="social-media">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Pre-fill the car details from URL parameters
+        const urlParams = new URLSearchParams(window.location.search);
+        document.getElementById('carName').value = urlParams.get('carName') || '';
+        document.getElementById('carType').value = urlParams.get('carType') || '';
+    </script>
+</body>
+</html>

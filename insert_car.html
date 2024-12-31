@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insert Car</title>
+</head>
+<style type="text/css">
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+    background-color: #000000; /* Bright Blue */
+    padding: 20px 0;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header .logo h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #f1c40f; /* Golden Yellow */
+}
+.table {
+    text-align: center;
+}
+
+.table h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+    background-color: dimgrey;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}`
+.table {
+    background-color: dimgrey; /* Dark overlay for text readability */
+    padding: 40px;
+    border-radius: 8px;
+    max-width: 400px;
+    width: 100%;
+    color: white;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+footer {
+    background-color: #000000;
+    padding: 20px 0;
+    color: white;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer .social-media {
+    margin-top: 10px;
+}
+
+footer .social-media a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+footer .social-media a:hover {
+    color: #f39c12; /* Golden Yellow */
+}
+</style>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Car Rental Service</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="owner_home.jsp">Home</a></li>
+                    <li><a href="insert_car.html">Add Cars</a></li>
+                    <li><a href="view_rentals.jsp">View booking </a></li>
+                    <li><a href="viewadminlogs.jsp">View user </a></li>
+                    <li><a href="insert_rentals.html">rentals</a></li>
+                    <li><a href="insert_payment.html">payments</a></li>
+                    <li><a href="changepwd.html">Change password</a></li>
+                    <li><a href="logout.html">logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="table">
+    <h1>Insert Car Details</h1>
+    <form action="WEB-INF/insert_car.jsp" method="post">
+        <label for="car_model">Car Model:</label>
+        <input type="text" id="car_model" name="car_model" required><br><br>
+
+        <label for="license_plate">License Plate:</label>
+        <input type="text" id="license_plate" name="license_plate" required><br><br>
+
+        <label for="status">Status:</label>
+        <select id="status" name="status">
+            <option value="available">Available</option>
+            <option value="rented">Rented</option>
+            <option value="maintenance">Maintenance</option>
+        </select><br><br>
+
+        <label for="rental_rate">Rental Rate:</label>
+        <input type="number" id="rental_rate" name="rental_rate" step="0.01" required><br><br>
+
+        <label for="car_type">Car Type:</label>
+        <input type="text" id="car_type" name="car_type"><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</div>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Car Rental Service. All rights reserved.</p>
+            <div class="social-media">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
